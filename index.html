@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> Attendance for Bootcamp </title> 
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+  <img src="http://goo.gl/iUBqVl"/>
+  <div id="welcome">
+    <h1>Welcome to Andela's Attendance Register!!!</h1>
+    <p id="newSign">If you are new, sign up below.<span><a href="#" class="new">Sign Up</a></span></p>
+    <p id="oldSign">Are you an existing user?<span><a href="#" class="existing">Login</a></span></p>
+  </div>
+   <div id="signUp">
+    <form id="body1" method="post" action="">
+      <label for="inputID">Your Username:</label>
+      <p><input type="text" id="textbox1" required></p>
+      <label for="password" required>Your Password:</label>
+      <p><input type="password" id="pwdtextbox1"></p>
+      <input type="submit" id="sign" value="Sign Up" class="btn1 btn1-primary">
+      <br><br>
+    </form>
+  </div> 
+  <div id="form-group">
+    <form id="body2" method="post" action="">
+      <label>Username:</label>
+      <p><input type="text" id="textbox"></p>
+      <label>Password:</label>
+      <p><input type="password" id="pwdtextbox"></p>
+      <input type="submit" id="checkIn" value="Check In" class="btn btn-primary">          
+      <p class="loginError"></p><br><br> 
+    </form>
+  </div>
+  
+  <div id="main attendance">
+    <h3 class="heading text-center" id="register">Attendance Register</h3>
+  </div>
+  <div id="main1">
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Check-in Time</th>
+          <th>Checkout</th>
+          <th>Check-out Time</th>
+        </tr>
+      </thead>
+      <tbody class="list">
+      </tbody>
+    </table>
+  </div>
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/jquery-ui/jquery-ui.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
